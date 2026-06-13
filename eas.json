@@ -7,19 +7,13 @@
       "android": {
         "buildType": "apk"
       },
-      "env": {
-        "NPM_FLAGS": "--legacy-peer-deps"
-      },
-      "node": "20.18.0"
+      "node": "20.19.4"
     },
     "production": {
       "android": {
         "buildType": "apk"
       },
-      "env": {
-        "NPM_FLAGS": "--legacy-peer-deps"
-      },
-      "node": "20.18.0"
+      "node": "20.19.4"
     }
   }
 }
