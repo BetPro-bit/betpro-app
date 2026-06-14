@@ -1,19 +1,12 @@
 [build]
-  command = "npm install --legacy-peer-deps && npm run build:web"
+  command = "npm run build:web"
   publish = "dist"
 
 [build.environment]
   NODE_VERSION = "18"
+  NPM_FLAGS = "--legacy-peer-deps"
 
-# Redirect all routes to index.html for Expo Router client-side navigation
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-# Proxy API calls to your backend (update BACKEND_URL to your actual backend)
-[[redirects]]
-  from = "/api/*"
-  to = "https://YOUR_BACKEND_URL/api/:splat"
-  status = 200
-  force = true
