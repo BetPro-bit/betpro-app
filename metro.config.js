@@ -10,6 +10,12 @@ config.resolver.resolveRequest = (context, moduleName, platform) => {
       type: 'sourceFile',
     };
   }
+  if (platform === 'web' && moduleName === 'expo-secure-store') {
+    return {
+      filePath: path.resolve(__dirname, 'shims/SecureStore.js'),
+      type: 'sourceFile',
+    };
+  }
   return context.resolveRequest(context, moduleName, platform);
 };
 
