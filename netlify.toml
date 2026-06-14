@@ -1,5 +1,5 @@
 [build]
-  command = "npx expo export --platform web"
+  command = "npm install --legacy-peer-deps && ./node_modules/.bin/expo export --platform web"
   publish = "dist"
 
 [build.environment]
