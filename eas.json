@@ -5,15 +5,15 @@
   "build": {
     "preview": {
       "android": {
-        "buildType": "apk"
-      },
-      "node": "20.19.4"
+        "buildType": "apk",
+        "image": "ubuntu-22.04-jdk-17-ndk-r26b"
+      }
     },
     "production": {
       "android": {
-        "buildType": "apk"
-      },
-      "node": "20.19.4"
+        "buildType": "apk",
+        "image": "ubuntu-22.04-jdk-17-ndk-r26b"
+      }
     }
   }
 }
